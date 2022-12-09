@@ -5,22 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Compara Consumo</title>
 </head>
 
 <body>
     </header>
-    <div class="titulo_secc">
-        <h3>COMPARA CONSUMO DE TU AUTO</h3>
+    <div class="cabecera">
+        <h2>COMPARA CONSUMO DE TU AUTO</h2>
+
+
 
 
 
     </div>
+    <div class="titulo_secc">
+        <h3>Por favor, ingresa los datos solicitados</h3>
+
+    </div>
+    <div class="contact_form">
+
+        <div class="formulario">
+
+
+
+
+
+            <p>
+                <label for="nombre" class="colocar_nombre">Ingrese cuantos kilometros recorrio con el tanque lleno.
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Km">
+            </p>
+
+            <p>
+                <label for="email" class="colocar_email">Ingrese la Capacidad de su tanque en Litros.
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Litros">
+            </p>
+
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+                <p>Calcular</p>
+            </button>
+
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+
+
+        </div>
+    </div>
+    <div class="cabecera">
+        <h4>Los kilometros que has ingresado son:</h4>
+        <h4>La capacidad ingresada de combustible es:</h4>
+        <h4>Según los datos ingresados, el consumo medio de tu vehiculo es:___ L/c100 km</h4>
+
+
+
+    </div>
+    <div class="titulo_secc">
+        <h3>A continuación, una lista de vehículos con consumo dentro de tu rango.</h3>
+
+    </div>
+
     <div class="container">
 
         <div class="posts">
@@ -109,13 +163,12 @@
                 <div class="post__image post__image--6"></div>
                 <div class="post__content">
                     <div class="post__inside">
-                        <h3 class="post__title">British Airways refuerza servicio en Club World</h3>
+                        <h3 class="post__title">Fiat Mobi</h3>
                         <p class="post__excerpt">
-                            Los pasajeros de la cabina Club World de la aerolínea
-                            disfrutarán de un servicio renovado a bordo.
+                            Consumo 7 L c/100 km
                         </p>
                         <button class="btn--accent post__button">
-                            Leer Más
+                            Ver Especificaciones
                             <i class="fa fa-chevron-right"></i>
                         </button>
                     </div>

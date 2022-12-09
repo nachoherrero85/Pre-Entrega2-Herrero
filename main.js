@@ -13,6 +13,7 @@ let listaAutos = [
     { nombre: "Ford Mondeo", consumo: 7 },
     { nombre: "Chevrolet Onix", consumo: 7 },
     { nombre: "VW UP!", consumo: 7 },
+    { nombre: "Fiat Mobi", consumo: 7 },
     { nombre: "Toyota Yaris", consumo: 8 },
     { nombre: "Puegeot 2008", consumo: 8 },
     { nombre: "Ford Ecoesport", consumo: 9 },
