@@ -1,0 +1,25 @@
+$menu-color: rgb(255, 255, 255);
+$border-li-main: rgb(47, 46, 46);
+$a-noticias: rgba(198, 191, 191, 0.281);
+$border-noticias: 1px solid rgb(0, 0, 0);
+$fondo-noticias: rgba(255, 255, 255, 0.281);
+
+
+$primary: #042A4F;
+$accent: #de1a1a;
+$secondary: #ccc;
+$bg-color: #f4f4f4;
+$text-color: #2a2a2a;
+$line-height: 1.25;
+
+@keyframes color-t {
+    from {
+        color: rgb(0, 0, 0);
+    }
+
+    to {
+        color: rgb(123, 112, 112);
+    }
+
+
+}
