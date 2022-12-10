@@ -1,11 +1,6 @@
 alert("Vamos a pedirte un par de datos para calcular el consumo de tu auto y que modelos tienen consumo similar, los cuales seran mostrados en consola. Referencia: Se considera dentro de la media consumos entre 8L y 10L cada 100 km mediante la funcion comparaConsumo()");
 
-// class Auto {
-//     constructor(nombre, consumo) {
-//         this.nombre = nombre;
-//         this.consumo = consumo;
-//     }
-// }
+
 
 const listaAutos = [
     { nombre: "Toyota RAV4", consumo: 6 },
