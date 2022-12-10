@@ -25,7 +25,7 @@ const listaAutos = [
 ];
 
 function comparaConsumo() {
-    let kmRecorrido = parseInt(prompt("Cuantos kilometros recorriste con el tanque lleno? Ingrese número entero "));
+    let kmRecorrido = parseInt(prompt("Cuántos kilometros recorriste con el tanque lleno? Ingrese número  "));
     if (Number(kmRecorrido) == kmRecorrido) {
         console.log(`Usted Ingreso que recorrió ${kmRecorrido} km`);
     } else {
@@ -34,7 +34,7 @@ function comparaConsumo() {
     }
 
 
-    let capacidadTanque = parseInt(prompt("Cual es la capacidad de tu tanque en litros . Ingrese Número Entero"));
+    let capacidadTanque = parseInt(prompt("Cuál es la capacidad de tu tanque en litros . Ingrese Número "));
     if (Number(capacidadTanque) == capacidadTanque) {
         console.log(`Usted Ingreso que la capacidad de su tanque es ${capacidadTanque} litros`);
     } else {
@@ -44,11 +44,11 @@ function comparaConsumo() {
 
 
     let consumoCombustible = parseInt((capacidadTanque / kmRecorrido) * 100);
-    console.log(`Tu consumo es de ${consumoCombustible} litros cada 100 km`);
+    console.log(`Tu consumo es de ${consumoCombustible} litros cada 100 km aproximadamente`);
 
     if (consumoCombustible > 10) {
         let filtraPorConsumo = listaAutos.filter(cons => cons.consumo > 10)
-        console.log("Vehículos con consumo dentro de tu rango. Se considera por encima de la media consumo por encima 10 L c/100 km");
+        console.log("Vehículos con consumo dentro de tu rango. Se considera por encima de la media consumo mayor a 10 L c/100 km");
         console.log(filtraPorConsumo);
 
     }
@@ -63,14 +63,18 @@ function comparaConsumo() {
     else {
 
         let filtraPorConsumo = listaAutos.filter(cons => cons.consumo < 8);
-        console.log("Vehículos con consumo dentro de tu rango. Tu vehçulo se encuentra dentro de lo que se considera excelente consumo (menor a 8 listos c/100km)");
+        console.log("Vehículos con consumo dentro de tu rango. Tu vehículo se encuentra dentro de lo que se considera excelente consumo (menor a 8 listos c/100km)");
         console.log(filtraPorConsumo);
 
 
 
 
     }
+
+
 }
+
+
 
 
 
