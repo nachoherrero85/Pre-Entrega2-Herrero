@@ -1,5 +1,3 @@
-@import url(../base/_variables.scss);
-
 @keyframes color-t {
   from {
     color: black;

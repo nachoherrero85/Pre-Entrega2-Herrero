@@ -1,13 +1,13 @@
-alert("Vamos a pedirte un par de datos para calcular el consumo de tu auto y que modelos tienen consumo similar, los cuales seran mostrados en consola. Referencia: Se considera dentro de la media consumos entre 8L y 10L cada 100 km mediante la fucnion comparaConsumo()");
+alert("Vamos a pedirte un par de datos para calcular el consumo de tu auto y que modelos tienen consumo similar, los cuales seran mostrados en consola. Referencia: Se considera dentro de la media consumos entre 8L y 10L cada 100 km mediante la funcion comparaConsumo()");
 
-class Auto {
-    constructor(nombre, consumo) {
-        this.nombre = nombre;
-        this.consumo = consumo;
-    }
-}
+// class Auto {
+//     constructor(nombre, consumo) {
+//         this.nombre = nombre;
+//         this.consumo = consumo;
+//     }
+// }
 
-let listaAutos = [
+const listaAutos = [
     { nombre: "Toyota RAV4", consumo: 6 },
     { nombre: "Citroën C-Elysee", consumo: 6 },
     { nombre: "Ford Mondeo", consumo: 7 },
@@ -30,20 +30,20 @@ let listaAutos = [
 ];
 
 function comparaConsumo() {
-    let kmRecorrido = parseInt(prompt("Cuantos kilometros recorriste con el tanque lleno? "));
+    let kmRecorrido = parseInt(prompt("Cuantos kilometros recorriste con el tanque lleno? Ingrese número entero "));
     if (Number(kmRecorrido) == kmRecorrido) {
         console.log(`Usted Ingreso que recorrió ${kmRecorrido} km`);
     } else {
-        alert("Ingrese un dato válido y vuelva a intentarlo")
+        alert("Vuelva a intentarlo ingresando un dato válido (número)")
         return false;
     }
 
 
-    let capacidadTanque = parseInt(prompt("Cual es la capacidad de tu tanque en litros "));
+    let capacidadTanque = parseInt(prompt("Cual es la capacidad de tu tanque en litros . Ingrese Número Entero"));
     if (Number(capacidadTanque) == capacidadTanque) {
         console.log(`Usted Ingreso que la capacidad de su tanque es ${capacidadTanque} litros`);
     } else {
-        alert("Ingrese un dato válido y vualva a intentarlo")
+        alert("Vuelva a intentarlo ingresando un dato válido (número)")
         return false;
     }
 
@@ -66,7 +66,7 @@ function comparaConsumo() {
     }
 
     else {
-        //let filtraPorConsumo = listaAutos.filter(cons => cons.consumo < 8);
+
         let filtraPorConsumo = listaAutos.filter(cons => cons.consumo < 8);
         console.log("Vehículos con consumo dentro de tu rango. Tu vehçulo se encuentra dentro de lo que se considera excelente consumo (menor a 8 listos c/100km)");
         console.log(filtraPorConsumo);
